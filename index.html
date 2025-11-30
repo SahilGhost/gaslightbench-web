@@ -136,15 +136,58 @@
 
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- Results -->
+    <!-- Findings Section -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">🔥 Findings</h2>
+        <h2 class="title is-3" style="margin-bottom: 10px;">🔥 Findings</h2>
+
         <div class="content has-text-justified">
-          <img></img>
+
+          <!-- Figure A (Main Bar Graph) -->
+          <figure style="text-align: center; margin-top: 0;">
+            <img src="./static/images/results_bar.png" 
+                alt="Model Accuracy Bar Plot" 
+                style="max-width: 90%; border-radius: 6px;">
+            <figcaption style="margin-top: 10px; font-style: italic;">
+              <strong>Mean Accuracy Bar Chart:</strong>  
+              Model accuracy on GASLIGHTBENCH across 10 models.  
+              Higher accuracy indicates <strong>lower susceptibility to sycophancy</strong>.
+            </figcaption>
+          </figure>
+
+          <!-- Radar Plots Section (Stacked Layout) -->
+          <div class="columns is-centered" style="margin-top: 40px;">
+            <div class="column is-full has-text-centered">
+
+              <!-- Figure B -->
+              <figure style="margin-bottom: 50px;">
+                <img src="./static/images/radar_single.png"
+                    alt="Single-turn Modifier Radar Plot"
+                    style="max-width: 90%; border-radius: 6px;">
+                <figcaption style="margin-top: 15px; font-style: italic;">
+                  <strong>Single-turn Modifier Accuracy:</strong>
+                  Radial axes represent model accuracy for each single-turn modifier (relative to control).
+                </figcaption>
+              </figure>
+
+              <!-- Figure C -->
+              <figure>
+                <img src="./static/images/radar_multi.png"
+                    alt="Multi-turn Modifier Radar Plot"
+                    style="max-width: 90%; border-radius: 6px;">
+                <figcaption style="margin-top: 15px; font-style: italic;">
+                  <strong>Multi-turn Modifier Accuracy:</strong>
+                  Radial axes represent model accuracy for each multi-turn modifier.
+                </figcaption>
+              </figure>
+
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
+    <!-- / Findings Section -->
     <!--/ Abstract. -->
 
     <!-- Abstract. -->
